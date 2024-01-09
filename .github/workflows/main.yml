@@ -10,6 +10,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: build a job
-          run: |
-           shell: cmd
-           echo: "Building a job"
+          uses: actions/checkout@v4
+        - run: |
+            echo "Building a job"
