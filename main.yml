@@ -1,0 +1,14 @@
+name: build a test project
+on:
+  push:
+    branches:
+     - main
+     - feature
+
+jobs:
+   build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: build a job
+          run: |
+           echo: "Building a job"
